@@ -67,6 +67,24 @@ Page({
     })
   },
 
+  test: function () {
+    console.log('进入云函数')
+    // 调用云函数
+    wx.cloud.callFunction({
+      name: 'sum',
+      data: {
+        a: 1,
+        b: 6
+      },
+      success: res => {
+        console.log('[云函数] [login] user openid: ', res.result.sum)       
+      },
+      fail: err => {
+        console.error('[云函数] [login] 调用失败', err)
+      }
+    })
+  },
+
   // 上传图片
   doUpload: function () {
     // 选择图片
