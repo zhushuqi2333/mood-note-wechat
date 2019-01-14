@@ -74,7 +74,7 @@ Page({
       name: 'sum',
       data: {
         a: 1,
-        b: 3
+        b: 4
       },
       success: res => {
         console.log('[云函数] [login] user openid: ', res.result.sum)       
