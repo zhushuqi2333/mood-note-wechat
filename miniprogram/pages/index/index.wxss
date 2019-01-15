@@ -1,137 +1,75 @@
-/**index.wxss**/
+/* pages/user/login.wxss */
 
-page {
-  background: #f6f6f6;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.userinfo, .uploader, .tunnel {
-  margin-top: 40rpx;
-  height: 140rpx;
+page{
   width: 100%;
-  background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-left: none;
-  border-right: none;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  transition: all 300ms ease;
+  height: 100%;
 }
 
-.userinfo-avatar {
-  width: 100rpx;
-  height: 100rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-  background-size: cover;
-  background-color: white;
+.view-center{
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.userinfo-avatar:after {
-  border: none;
-}
-
-.userinfo-nickname {
-  font-size: 32rpx;
-  color: #007aff;
-  background-color: white;
-  background-size: cover;
-}
-
-.userinfo-nickname::after {
-  border: none;
-}
-
-.uploader, .tunnel {
-  height: auto;
-  padding: 0 0 0 40rpx;
-  flex-direction: column;
-  align-items: flex-start;
-  box-sizing: border-box;
-}
-
-.uploader-text, .tunnel-text {
+.login{
   width: 100%;
-  line-height: 52px;
-  font-size: 34rpx;
-  color: #007aff;
+  height: 100%;
+  background-color: #FFF;
 }
 
-.uploader-container {
+.none{
   width: 100%;
-  height: 400rpx;
-  padding: 20rpx 20rpx 20rpx 0;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  box-sizing: border-box;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  height: 80px;
 }
 
-.uploader-image {
+.logo{
+  width: 80px;
+  height: 80px;
+}
+
+.logo image{
+  width: 80px;
+  height: 80px;
+  border-radius:40px;
+}
+
+.title{
   width: 100%;
-  height: 360rpx;
+  height: 30px;
+  margin-top: 10px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 18px;
+  color: #2d2d2d;
+  font-weight: bold;
 }
 
-.tunnel {
-  padding: 0 0 0 40rpx;
+.content{
+  width: 200px;
+  height: 50px;
+  line-height: 25px;
+  margin-top: 20px;
+  color: #b8b8b8;
+  font-size: 14px;
 }
 
-.tunnel-text {
-  position: relative;
-  color: #222;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: space-between;
-  box-sizing: border-box;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+.login-button{
+  height: 40px;
+  width: 150px;
+  margin-top: 20px;
+  line-height: 40px;
+  border-radius:5px 5px 5px 5px;
+  background-color: #0bb908;
+  color: #FFF;
 }
 
-.tunnel-text:first-child {
-  border-top: none;
+.motto{
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 80px;
+  text-align: center;
+  color: #c7c7c7;
+  font-weight: 500;
+  font-size: 14px;
 }
 
-.tunnel-switch {
-  position: absolute;
-  right: 20rpx;
-  top: -2rpx;
-}
-
-.disable {
-  color: #888;
-}
-
-.service {
-  position: fixed;
-  right: 40rpx;
-  bottom: 40rpx;
-  width: 140rpx;
-  height: 140rpx;
-  border-radius: 50%;
-  background: linear-gradient(#007aff, #0063ce);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  transition: all 300ms ease;
-}
-
-.service-button {
-  position: absolute;
-  top: 40rpx;
-}
-
-.service:active {
-  box-shadow: none;
-}
-
-.request-text {
-  padding: 20rpx 0;
-  font-size: 24rpx;
-  line-height: 36rpx;
-  word-break: break-all;
-}

@@ -2,18 +2,55 @@
   "cloud": true,
   "pages": [
     "pages/index/index",
+    "pages/home/index",
+    "pages/person/index",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
     "pages/databaseGuide/databaseGuide",
     "pages/addFunction/addFunction",
     "pages/deployFunctions/deployFunctions",
-    "pages/chooseLib/chooseLib"
+    "pages/chooseLib/chooseLib",
+    "pages/schedule",
+    "pages/schedule/schedule",
+    "pages/schedule/index",
+    "pages/note/index"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTitleText": "简易云笔记",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#9a999a",
+    "selectedColor": "#f79307",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "iconPath": "images/index/index-never.png",
+        "selectedIconPath": "images/index/index.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/note/index",
+        "iconPath": "images/index/cart-never.png",
+        "selectedIconPath": "images/index/cart.png",
+        "text": "笔记"
+      },
+      {
+        "pagePath": "pages/schedule/index",
+        "iconPath": "images/index/person-never.png",
+        "selectedIconPath": "images/index/person.png",
+        "text": "日程"
+      },
+      {
+        "pagePath": "pages/person/index",
+        "iconPath": "images/index/person-never.png",
+        "selectedIconPath": "images/index/person.png",
+        "text": "个人中心"
+      }
+    ]
   }
 }
