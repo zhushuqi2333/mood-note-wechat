@@ -6,7 +6,6 @@
 		"es6": true,
 		"postcss": true,
 		"minified": true,
-    
 		"newFeature": true
 	},
 	"appid": "wx11cb8cf109197bfd",
